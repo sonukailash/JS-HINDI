@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!-- 1. The Button -->
+    <button id="toggleBtn" onclick="toggleElement()">Hide Text</button>
+
+    <!-- 2. The Content to Hide/Show -->
+    <div id="myDiv" style="margin-top: 20px; padding: 10px; background-color: yellow;">
+        Now you see me!
+    </div>
+
+    <script>
+        function toggleElement() {
+            const box = document.getElementById("myDiv");
+            const btn = document.getElementById("toggleBtn");
+
+            // Check if the div is currently visible
+            if (box.style.display === "none") {
+                box.style.display = "block";   // Show the div
+                btn.textContent = "Hide Text"; // Update button text
+            } else {
+                box.style.display = "none";    // Hide the div
+                btn.textContent = "Show Text"; // Update button text
+            }
+        }
+    </script>
+
+</body>
+</html>

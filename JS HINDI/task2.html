@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <img id="myImage" src="dogimage.jpg" >
+    <br><br>
+    <button onclick="switchImage()">IMAGE BUTTON</button>
+    <script>
+        function switchImage() {
+            // Find the image by ID
+            const img = document.getElementById("myImage");
+            // Change the 'src' to a new image link
+            img.src = "image.png";
+        }
+    </script>
+</body>
+</html>

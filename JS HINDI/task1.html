@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Changer</title>
+</head>
+<body>
+    <p id="myText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus magnam vel perferendis dolore eaque doloremque non error soluta porro et, consectetur hic harum dignissimos qui animi facere voluptates. Officiis!</p>
+    <button onclick="changeContent()">PRESS THE BUTTON</button> 
+    <script>
+        function changeContent() {
+            // selecting para by itys ID
+            const paragraph = document.getElementById("myText");
+
+            // Change the content of text
+            paragraph.textContent = "Text has been updated!";
+
+            // Change the color of text
+            paragraph.style.color = "pink";
+        }
+    </script>
+</body>
+</html>
